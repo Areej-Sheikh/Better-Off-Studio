@@ -39,7 +39,7 @@ function randomImage() {
 }
 function page1Animation() {
   gsap.to("#page1-heading", {
-    scale: 1.3,
+    scale: 1,
     marginTop: "15%",
     scrollTrigger: {
       trigger: "#page1-heading",
@@ -47,6 +47,7 @@ function page1Animation() {
 
       start: "top 50%",
       end: "top 0",
+      // markers:true,
       scrub: 2,
     },
   });
@@ -171,32 +172,32 @@ function page5Animation() {
   })
 
 }
-function page6Animation() {
-    gsap.from(".page6-content h4 ", {
-      y: 70,
-      stagger: 0.15,
-      rotate: 1,
-      opacity: 0,
-      duration: 0.7,
-      scrollTrigger: {
-        trigger: ".page6-content",
-        scroller: "body",
-        start: "top 80%",
+// function page6Animation() {
+//     gsap.from(".page6-content h4 ", {
+//       y: 70,
+//       stagger: 0.15,
+//       rotate: 1,
+//       opacity: 0,
+//       duration: 0.7,
+//       scrollTrigger: {
+//         trigger: ".page6-content",
+//         scroller: "body",
+//         start: "top 80%",
   
-      },
-    });
-    gsap.from(".page6-name span, p", {
-      y: 70,
-      rotate: 1,
-      opacity: 0,
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: ".page6-name",
-        scroller: "body",
-        start: "top 90%",
-      },
-    });
-  }
+//       },
+//     });
+//     gsap.from(".page6-name span, p", {
+//       y: 70,
+//       rotate: 1,
+//       opacity: 0,
+//       duration: 0.5,
+//       scrollTrigger: {
+//         trigger: ".page6-name",
+//         scroller: "body",
+//         start: "top 90%",
+//       },
+//     });
+//   }
   function page7Animation() {
     gsap.from('.page7-box1',{
       y:100,
@@ -269,6 +270,6 @@ page2Animation();
 page3Animation();
 page4Animation()
 page5Animation()
-page6Animation()
+// page6Animation()
 page7Animation()
 cursorAnimation();
